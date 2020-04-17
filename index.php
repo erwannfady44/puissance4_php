@@ -1,14 +1,10 @@
-<?php
-function chargerClasse($classe)
-{
-    require $classe . '.php'; // On inclut la classe correspondante au paramètre passé.
-}
-
-spl_autoload_register('chargerClasse'); // On enregistre la fonction en autoload pour qu'elle soit appelée dès qu'on instanciera une classe non déclarée.
-
-$pions = new Pions();
-
-echo "test";
-
-echo "2";
-?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Puissance 4</title>
+</head>
+<body>
+    <button>Création partie</button>
+    <button>Rejoindre une partie</button>
+</body>
+</html>
